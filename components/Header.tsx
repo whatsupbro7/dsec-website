@@ -2,97 +2,100 @@ export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2.5">
-        {/* DSEC logo — desktop */}
-        <a href="/" aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="hidden md:block">
+        {/* DSEC horizontal logo — desktop */}
+        <a
+          href="/"
+          aria-label="DAESOUNG ELECTRIC COMPONENTS home"
+          className="hidden md:block"
+        >
           <svg
-            width="300"
-            height="79"
-            viewBox="0 0 500 132"
+            width="360"
+            height="76"
+            viewBox="0 0 720 152"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[79px] w-[300px]"
+            className="h-[76px] w-[360px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
-            <defs>
-              <linearGradient id="dsecGreen" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#16a34a" />
-                <stop offset="100%" stopColor="#087f3d" />
-              </linearGradient>
-            </defs>
 
+            {/* Outer logo frame */}
             <rect
               x="8"
               y="8"
-              width="484"
-              height="116"
-              rx="58"
+              width="704"
+              height="136"
+              rx="68"
               fill="#ffffff"
               stroke="#087f3d"
               strokeWidth="7"
             />
 
-            <text
-              x="47"
-              y="57"
-              fill="#087f3d"
-              fontSize="25"
-              fontWeight="700"
-              letterSpacing="2.5"
-              fontFamily="Arial, Helvetica, sans-serif"
-            >
-              DAESOUNG
-            </text>
-
-            <text
-              x="453"
-              y="57"
-              textAnchor="end"
-              fill="#087f3d"
-              fontSize="25"
-              fontWeight="700"
-              letterSpacing="2.5"
-              fontFamily="Arial, Helvetica, sans-serif"
-            >
-              ELECTRIC
-            </text>
-
+            {/* DSEC green oval */}
             <ellipse
-              cx="250"
-              cy="65"
-              rx="112"
-              ry="42"
-              fill="url(#dsecGreen)"
+              cx="108"
+              cy="76"
+              rx="91"
+              ry="48"
+              fill="#087f3d"
             />
-
             <text
-              x="250"
-              y="83"
+              x="108"
+              y="94"
               textAnchor="middle"
               fill="#ffffff"
-              fontSize="54"
+              fontSize="56"
               fontWeight="800"
-              letterSpacing="3"
+              letterSpacing="2"
               fontFamily="Arial, Helvetica, sans-serif"
             >
               DSEC
             </text>
 
+            {/* Company name */}
             <text
-              x="250"
-              y="113"
-              textAnchor="middle"
-              fill="#087f3d"
-              fontSize="19"
+              x="225"
+              y="70"
+              fill="#173f8f"
+              fontSize="30"
+              fontWeight="800"
+              letterSpacing="1.2"
+              fontFamily="Arial, Helvetica, sans-serif"
+            >
+              DAESOUNG ELECTRIC
+            </text>
+
+            {/* Components subtitle */}
+            <line
+              x1="225"
+              y1="86"
+              x2="292"
+              y2="86"
+              stroke="#6f7f9b"
+              strokeWidth="2"
+            />
+            <text
+              x="306"
+              y="94"
+              fill="#6f7f9b"
+              fontSize="17"
               fontWeight="700"
-              letterSpacing="4"
+              letterSpacing="5"
               fontFamily="Arial, Helvetica, sans-serif"
             >
               COMPONENTS
             </text>
+            <line
+              x1="493"
+              y1="86"
+              x2="560"
+              y2="86"
+              stroke="#6f7f9b"
+              strokeWidth="2"
+            />
           </svg>
         </a>
 
-        {/* Compact logo — mobile */}
+        {/* Compact DSEC mark — mobile */}
         <a href="/" aria-label="DSEC home" className="md:hidden">
           <svg
             width="92"
@@ -102,18 +105,12 @@ export default function Header() {
             aria-label="DSEC"
             className="h-[46px] w-[92px]"
           >
-            <defs>
-              <linearGradient id="dsecGreenMobile" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#16a34a" />
-                <stop offset="100%" stopColor="#087f3d" />
-              </linearGradient>
-            </defs>
             <ellipse
               cx="92"
               cy="46"
               rx="84"
               ry="38"
-              fill="url(#dsecGreenMobile)"
+              fill="#087f3d"
             />
             <text
               x="92"
