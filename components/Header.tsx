@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2.5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
         {/* DSEC horizontal logo — desktop */}
         <a
           href="/"
@@ -9,41 +9,41 @@ export default function Header() {
           className="hidden md:block"
         >
           <svg
-            width="360"
-            height="76"
-            viewBox="0 0 720 152"
+            width="340"
+            height="72"
+            viewBox="0 0 680 144"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[76px] w-[360px]"
+            className="h-[72px] w-[340px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
 
-            {/* Outer logo frame */}
+            {/* Clean horizontal logo frame */}
             <rect
-              x="8"
-              y="8"
-              width="704"
-              height="136"
-              rx="68"
+              x="7"
+              y="7"
+              width="666"
+              height="130"
+              rx="65"
               fill="#ffffff"
               stroke="#087f3d"
-              strokeWidth="7"
+              strokeWidth="6"
             />
 
             {/* DSEC green oval */}
             <ellipse
-              cx="108"
-              cy="76"
-              rx="91"
-              ry="48"
+              cx="101"
+              cy="72"
+              rx="86"
+              ry="45"
               fill="#087f3d"
             />
             <text
-              x="108"
-              y="94"
+              x="101"
+              y="89"
               textAnchor="middle"
               fill="#ffffff"
-              fontSize="56"
+              fontSize="53"
               fontWeight="800"
               letterSpacing="2"
               fontFamily="Arial, Helvetica, sans-serif"
@@ -53,12 +53,12 @@ export default function Header() {
 
             {/* Company name */}
             <text
-              x="225"
-              y="70"
+              x="206"
+              y="67"
               fill="#173f8f"
-              fontSize="30"
+              fontSize="28"
               fontWeight="800"
-              letterSpacing="1.2"
+              letterSpacing="1"
               fontFamily="Arial, Helvetica, sans-serif"
             >
               DAESOUNG ELECTRIC
@@ -66,29 +66,29 @@ export default function Header() {
 
             {/* Components subtitle */}
             <line
-              x1="225"
-              y1="86"
-              x2="292"
-              y2="86"
+              x1="206"
+              y1="84"
+              x2="271"
+              y2="84"
               stroke="#6f7f9b"
               strokeWidth="2"
             />
             <text
-              x="306"
-              y="94"
+              x="284"
+              y="92"
               fill="#6f7f9b"
-              fontSize="17"
+              fontSize="16"
               fontWeight="700"
-              letterSpacing="5"
+              letterSpacing="4.5"
               fontFamily="Arial, Helvetica, sans-serif"
             >
               COMPONENTS
             </text>
             <line
-              x1="493"
-              y1="86"
-              x2="560"
-              y2="86"
+              x1="466"
+              y1="84"
+              x2="531"
+              y2="84"
               stroke="#6f7f9b"
               strokeWidth="2"
             />
