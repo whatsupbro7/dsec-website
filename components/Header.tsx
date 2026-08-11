@@ -1,16 +1,16 @@
 export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2.5">
         {/* DSEC logo — desktop */}
         <a href="/" aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="hidden md:block">
           <svg
-            width="250"
-            height="66"
+            width="300"
+            height="79"
             viewBox="0 0 500 132"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[66px] w-[250px]"
+            className="h-[79px] w-[300px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
             <defs>
