@@ -10,11 +10,12 @@ export default function Header() {
         >
           <svg
             width="520"
-            height="100"
+            height="110"
             viewBox="0 0 680 144"
+            preserveAspectRatio="xMidYMid meet"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[100px] w-[520px]"
+            className="h-auto w-[520px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
 
