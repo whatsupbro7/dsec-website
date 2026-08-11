@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
-      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-8 py-3 lg:px-10">
+      <div className="mx-auto flex h-[136px] w-full max-w-[1460px] items-center justify-between px-8 lg:px-9">
         {/* Final DSEC horizontal logo */}
         <a
           href="/"
@@ -9,12 +9,12 @@ export default function Header() {
           className="hidden shrink-0 md:block"
         >
           <svg
-            width="430"
-            height="88"
+            width="520"
+            height="100"
             viewBox="0 0 680 144"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[88px] w-[430px]"
+            className="h-[100px] w-[520px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
 
@@ -31,13 +31,7 @@ export default function Header() {
             />
 
             {/* DSEC green oval */}
-            <ellipse
-              cx="101"
-              cy="72"
-              rx="86"
-              ry="45"
-              fill="#087f3d"
-            />
+            <ellipse cx="101" cy="72" rx="86" ry="45" fill="#087f3d" />
             <text
               x="101"
               y="89"
@@ -65,14 +59,7 @@ export default function Header() {
             </text>
 
             {/* Components subtitle */}
-            <line
-              x1="206"
-              y1="84"
-              x2="271"
-              y2="84"
-              stroke="#6f7f9b"
-              strokeWidth="2"
-            />
+            <line x1="206" y1="84" x2="271" y2="84" stroke="#6f7f9b" strokeWidth="2" />
             <text
               x="284"
               y="92"
@@ -84,14 +71,7 @@ export default function Header() {
             >
               COMPONENTS
             </text>
-            <line
-              x1="466"
-              y1="84"
-              x2="531"
-              y2="84"
-              stroke="#6f7f9b"
-              strokeWidth="2"
-            />
+            <line x1="466" y1="84" x2="531" y2="84" stroke="#6f7f9b" strokeWidth="2" />
           </svg>
         </a>
 
@@ -105,13 +85,7 @@ export default function Header() {
             aria-label="DSEC"
             className="h-[46px] w-[92px]"
           >
-            <ellipse
-              cx="92"
-              cy="46"
-              rx="84"
-              ry="38"
-              fill="#087f3d"
-            />
+            <ellipse cx="92" cy="46" rx="84" ry="38" fill="#087f3d" />
             <text
               x="92"
               y="62"
@@ -128,23 +102,23 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="hidden items-center gap-10 md:flex">
           <a
             href="/"
-            className="border-b-2 border-green-600 px-1 py-4 text-base font-medium text-green-700 transition hover:text-green-800"
+            className="border-b-2 border-green-600 px-1 py-5 text-[17px] font-medium text-green-700 transition hover:text-green-800"
           >
             HOME
           </a>
-          <a href="/about" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/about" className="px-1 py-5 text-[17px] font-medium text-slate-800 transition hover:text-green-700">
             ABOUT
           </a>
-          <a href="/products" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/products" className="px-1 py-5 text-[17px] font-medium text-slate-800 transition hover:text-green-700">
             PRODUCTS
           </a>
-          <a href="/quality" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/quality" className="px-1 py-5 text-[17px] font-medium text-slate-800 transition hover:text-green-700">
             QUALITY
           </a>
-          <a href="/contact" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/contact" className="px-1 py-5 text-[17px] font-medium text-slate-800 transition hover:text-green-700">
             CONTACT
           </a>
         </nav>
