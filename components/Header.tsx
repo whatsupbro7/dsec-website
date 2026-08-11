@@ -1,24 +1,24 @@
 export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
-        {/* DSEC horizontal logo — desktop */}
+      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-8 py-3 lg:px-10">
+        {/* Final DSEC horizontal logo */}
         <a
           href="/"
           aria-label="DAESOUNG ELECTRIC COMPONENTS home"
-          className="hidden md:block"
+          className="hidden shrink-0 md:block"
         >
           <svg
-            width="340"
-            height="72"
+            width="430"
+            height="88"
             viewBox="0 0 680 144"
             role="img"
             aria-labelledby="dsec-logo-title"
-            className="h-[72px] w-[340px]"
+            className="h-[88px] w-[430px]"
           >
             <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
 
-            {/* Clean horizontal logo frame */}
+            {/* Balanced rounded frame */}
             <rect
               x="7"
               y="7"
@@ -128,20 +128,23 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-8 md:flex">
-          <a href="/" className="text-sm font-medium text-slate-800 transition hover:text-green-700">
+        <nav className="hidden items-center gap-9 md:flex">
+          <a
+            href="/"
+            className="border-b-2 border-green-600 px-1 py-4 text-base font-medium text-green-700 transition hover:text-green-800"
+          >
             HOME
           </a>
-          <a href="/about" className="text-sm font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/about" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
             ABOUT
           </a>
-          <a href="/products" className="text-sm font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/products" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
             PRODUCTS
           </a>
-          <a href="/quality" className="text-sm font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/quality" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
             QUALITY
           </a>
-          <a href="/contact" className="text-sm font-medium text-slate-800 transition hover:text-green-700">
+          <a href="/contact" className="px-1 py-4 text-base font-medium text-slate-800 transition hover:text-green-700">
             CONTACT
           </a>
         </nav>
