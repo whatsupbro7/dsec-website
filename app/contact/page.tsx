@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 
+const CONTACT_EMAIL = "daesoungcs@daesoung.com";
+
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
@@ -9,6 +11,7 @@ export default function Contact() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setError("");
+    setSent(false);
 
     const form = event.currentTarget;
     const data = new FormData(form);
@@ -36,16 +39,7 @@ export default function Contact() {
       message,
     ].join("\n");
 
-    // The recipient can be connected to the company's official mailbox once it is confirmed.
-    // Until then, keep the form fully usable by preparing a standard email draft.
-    const recipient = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "";
-
-    if (!recipient) {
-      setError("The inquiry form is ready, but the company receiving email address still needs to be connected.");
-      return;
-    }
-
-    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent(true);
     form.reset();
   }
@@ -137,7 +131,7 @@ export default function Contact() {
             </div>
 
             {error && <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-700">{error}</div>}
-            {sent && <div role="status" className="rounded-xl border border-green-200 bg-green-50 px-5 py-4 text-sm text-green-800">Your email draft has been prepared. Please review it and send it from your email application.</div>}
+            {sent && <div role="status" className="rounded-xl border border-green-200 bg-green-50 px-5 py-4 text-sm text-green-800">Your email draft has been prepared for daesoungcs@daesoung.com. Please review it and send it from your email application.</div>}
 
             <div className="pt-4 text-center">
               <button type="submit" className="rounded-full bg-green-700 px-10 py-4 font-semibold text-white transition hover:bg-green-800">SEND INQUIRY</button>
