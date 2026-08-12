@@ -18,18 +18,18 @@ export default function Header() {
 
   return (
     <header className="w-full border-b border-slate-200 bg-white">
-      <div className="mx-auto flex min-h-[96px] w-full max-w-[1460px] items-center justify-between gap-6 px-5 py-3 sm:px-8 lg:px-9">
-        <a href={isKorean ? "/ko" : "/"} aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="shrink-0">
+      <div className="mx-auto flex min-h-[82px] w-full max-w-[1460px] items-center justify-between gap-3 px-4 py-3 sm:min-h-[90px] sm:gap-5 sm:px-7 lg:min-h-[96px] lg:gap-6 lg:px-9">
+        <a href={isKorean ? "/ko" : "/"} aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="min-w-0 shrink">
           <img
             src="/dsec-logo-balanced.svg"
             alt="DAESOUNG ELECTRIC COMPONENTS — DSEC"
             width={1030}
             height={210}
-            className="block h-auto w-[300px] sm:w-[380px] lg:w-[430px] xl:w-[520px]"
+            className="block h-auto w-[220px] sm:w-[300px] lg:w-[380px] xl:w-[460px]"
           />
         </a>
 
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-3 sm:gap-4">
           <nav className="hidden items-center gap-6 lg:flex xl:gap-9">
             {navItems.map((item) => {
               const active = currentKey === item.key;
