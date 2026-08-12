@@ -1,174 +1,119 @@
 export default function About() {
   return (
     <main className="bg-white text-gray-800">
-
       {/* ABOUT HERO */}
-      <section className="relative bg-green-800 px-6 pb-24 pt-36 text-white">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-green-300">
-            About Daesoung
+      <section className="relative overflow-hidden bg-gray-950 text-white">
+        <img
+          src="/images/factory.jpg"
+          alt="Daesoung Electric Components manufacturing facility"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gray-950/70" />
+        <div className="relative mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-green-300">
+            Since 2000
           </p>
-
-          <h1 className="text-5xl font-bold md:text-6xl">
-            DAESOUNG
+          <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
+            About Daesoung
           </h1>
-
-          <p className="mt-4 text-2xl font-light tracking-widest md:text-3xl">
+          <p className="mt-5 max-w-3xl text-xl font-light tracking-[0.18em] text-white/90 md:text-3xl">
             ELECTRIC COMPONENTS
           </p>
-
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">
-            A trusted manufacturing partner providing
-            high-quality wire harness solutions since 2000.
+          <p className="mt-8 max-w-2xl text-base leading-8 text-gray-200 md:text-lg">
+            A trusted manufacturing partner delivering wire harness and electrical component solutions with a commitment to quality, reliability and continuous improvement.
           </p>
         </div>
       </section>
 
       {/* COMPANY INTRODUCTION */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center">
-
+      <section className="px-6 py-20 md:px-10 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-14 md:grid-cols-[1.05fr_0.95fr] md:items-center">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-green-700">
                 Our Story
               </p>
-
-              <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
                 Building Trust Through Quality
               </h2>
-
-              <div className="mt-6 space-y-5 text-lg leading-8 text-gray-600">
-
+              <div className="mt-7 space-y-5 text-base leading-8 text-gray-600 md:text-lg">
                 <p>
-                  DAESOUNG ELECTRIC COMPONENTS has been
-                  operating as an established manufacturing company
-                  for many years, continuously working to provide
-                  the best quality for our customers.
+                  DAESOUNG ELECTRIC COMPONENTS has been developing and manufacturing electrical components and wire harness solutions since its establishment in October 2000.
                 </p>
-
                 <p>
-                  Since our establishment in October 2000,
-                  we have continuously developed our manufacturing
-                  capabilities and built long-term relationships
-                  with our customers and partners.
+                  Over the years, we have continuously strengthened our manufacturing capabilities and built long-term relationships with customers and business partners through dependable quality and responsive service.
                 </p>
-
                 <p>
-                  We strive to create a better company together
-                  with our employees while maintaining a culture
-                  that contributes to a good working environment
-                  and safety.
+                  We believe sustainable growth begins with people. We therefore work to create a safe, responsible and positive working environment while continuously improving our products and processes.
                 </p>
-
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl shadow-xl">
+            <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-gray-200">
               <img
                 src="/images/factory.jpg"
                 alt="Daesoung Electric Components factory"
-                className="h-full w-full object-cover"
+                className="aspect-[4/3] w-full object-cover"
               />
             </div>
-
           </div>
         </div>
       </section>
 
       {/* COMPANY INFORMATION */}
-      <section className="bg-gray-50 px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-
-          <div className="mb-12 text-center">
+      <section className="bg-gray-50 px-6 py-20 md:px-10 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-700">
               Company Information
             </p>
-
-            <h2 className="mt-3 text-3xl font-bold text-gray-900 md:text-4xl">
-              DAESOUNG ELECTRIC COMPONENTS
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
+              A Reliable Manufacturing Partner
             </h2>
+            <p className="mt-5 text-lg leading-8 text-gray-600">
+              Our company is focused on dependable production, consistent quality and long-term customer partnerships.
+            </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-            {/* ESTABLISHED */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold text-green-700">
-                ESTABLISHED
-              </p>
-
-              <p className="mt-3 text-2xl font-bold text-gray-900">
-                October 2000
-              </p>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">ESTABLISHED</p>
+              <p className="mt-3 text-2xl font-bold text-gray-900">October 2000</p>
+              <p className="mt-2 text-gray-500">Established manufacturing company</p>
             </div>
 
-            {/* EMPLOYEES */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold text-green-700">
-                EMPLOYEES
-              </p>
-
-              <p className="mt-3 text-2xl font-bold text-gray-900">
-                300+
-              </p>
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">EMPLOYEES</p>
+              <p className="mt-3 text-2xl font-bold text-gray-900">300+</p>
+              <p className="mt-2 text-gray-500">People working together for quality</p>
             </div>
 
-            {/* CERTIFICATIONS */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold text-green-700">
-                CERTIFICATIONS
-              </p>
-
-              <p className="mt-3 text-2xl font-bold text-gray-900">
-                ISO 9001
-              </p>
-
-              <p className="text-lg font-semibold text-gray-700">
-                ISO 14001
-              </p>
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">CERTIFICATIONS</p>
+              <p className="mt-3 text-2xl font-bold text-gray-900">ISO 9001</p>
+              <p className="mt-1 text-xl font-semibold text-gray-700">ISO 14001</p>
+              <p className="mt-2 text-gray-500">Quality and environmental management</p>
             </div>
 
-            {/* PRODUCTS */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm sm:col-span-2 lg:col-span-1">
-              <p className="text-sm font-semibold text-green-700">
-                PRODUCTS
-              </p>
-
-              <p className="mt-3 text-xl font-bold text-gray-900">
-                Home Appliance Harness
-              </p>
-
-              <p className="mt-1 text-xl font-bold text-gray-900">
-                Automotive Harness
-              </p>
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">PRODUCTS</p>
+              <p className="mt-3 text-xl font-bold text-gray-900">Home Appliance Harness</p>
+              <p className="mt-1 text-xl font-bold text-gray-900">Automotive Harness</p>
+              <p className="mt-2 text-gray-500">Wire harness and electrical components</p>
             </div>
 
-            {/* MAIN CUSTOMERS */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold text-green-700">
-                MAIN CUSTOMERS
-              </p>
-
-              <p className="mt-3 text-lg font-bold text-gray-900">
-                LG Electronics
-              </p>
-
-              <p className="text-lg font-bold text-gray-900">
-                POLYTRON
-              </p>
-
-              <p className="text-lg font-bold text-gray-900">
-                MIDEA
-              </p>
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">MAIN CUSTOMERS</p>
+              <div className="mt-3 space-y-1 text-lg font-bold text-gray-900">
+                <p>LG Electronics</p>
+                <p>POLYTRON</p>
+                <p>MIDEA</p>
+              </div>
+              <p className="mt-2 text-gray-500">Long-term business partnerships</p>
             </div>
 
-            {/* LOCATION */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold text-green-700">
-                LOCATION
-              </p>
-
+            <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
+              <p className="text-sm font-semibold text-green-700">LOCATION</p>
               <p className="mt-3 leading-7 text-gray-700">
                 Kawasan Industri dan Pergudangan Cikupa Mas
                 <br />
@@ -179,47 +124,76 @@ export default function About() {
                 Banten, Indonesia 15710
               </p>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* OUR COMMITMENT */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl text-center">
+      {/* VALUES */}
+      <section className="px-6 py-20 md:px-10 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-700">
+              What We Stand For
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
+              Quality, Safety & Customer Satisfaction
+            </h2>
+          </div>
 
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-700">
-            Our Commitment
-          </p>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-xl text-green-700">
+                ✓
+              </div>
+              <h3 className="mt-6 text-xl font-bold text-gray-900">Reliable Quality</h3>
+              <p className="mt-3 leading-7 text-gray-600">
+                Consistent manufacturing processes and quality control support dependable products for our customers.
+              </p>
+            </div>
 
-          <h2 className="mt-3 text-3xl font-bold text-gray-900 md:text-4xl">
-            Quality, Safety & Customer Satisfaction
-          </h2>
+            <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-xl text-green-700">
+                +
+              </div>
+              <h3 className="mt-6 text-xl font-bold text-gray-900">Continuous Improvement</h3>
+              <p className="mt-3 leading-7 text-gray-600">
+                We continuously improve our people, processes and manufacturing capabilities to meet changing customer needs.
+              </p>
+            </div>
 
-          <p className="mt-8 text-lg leading-8 text-gray-600">
-            We understand our customers' needs and strive to
-            provide the highest quality products and services.
-            With our continuous commitment and best efforts,
-            DAESOUNG ELECTRIC COMPONENTS will continue to
-            move forward together with our customers and partners.
-          </p>
-
+            <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-xl text-green-700">
+                →
+              </div>
+              <h3 className="mt-6 text-xl font-bold text-gray-900">Growing Together</h3>
+              <p className="mt-3 leading-7 text-gray-600">
+                We value long-term partnerships and aim to grow together with our customers, employees and business partners.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* BOTTOM MESSAGE */}
-      <section className="bg-green-800 px-6 py-16 text-center text-white">
-        <h2 className="text-3xl font-bold md:text-4xl">
-          Growing Together, Moving Forward
-        </h2>
-
-        <p className="mx-auto mt-4 max-w-2xl text-green-100">
-          DAESOUNG ELECTRIC COMPONENTS is committed to
-          becoming a reliable partner through quality,
-          technology and continuous improvement.
-        </p>
+      <section className="bg-green-800 px-6 py-16 text-center text-white md:px-10">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-300">
+            DAESOUNG ELECTRIC COMPONENTS
+          </p>
+          <h2 className="mt-3 text-3xl font-bold md:text-5xl">
+            Growing Together, Moving Forward
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-green-100">
+            We are committed to becoming a reliable manufacturing partner through quality, technology and continuous improvement.
+          </p>
+          <a
+            href="/contact"
+            className="mt-8 inline-flex rounded-full bg-white px-7 py-3 font-semibold text-green-800 transition hover:bg-green-50"
+          >
+            Contact Us
+          </a>
+        </div>
       </section>
-
     </main>
   );
 }
