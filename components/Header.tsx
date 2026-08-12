@@ -21,11 +21,11 @@ export default function Header() {
       <div className="mx-auto flex min-h-[82px] w-full max-w-[1460px] items-center justify-between gap-3 px-4 py-3 sm:min-h-[90px] sm:gap-5 sm:px-7 lg:min-h-[96px] lg:gap-6 lg:px-9">
         <a href={isKorean ? "/ko" : "/"} aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="min-w-0 shrink">
           <img
-            src="/dsec-logo-balanced.svg"
+            src="/dsec-logo-option4.svg"
             alt="DAESOUNG ELECTRIC COMPONENTS — DSEC"
-            width={1030}
-            height={210}
-            className="block h-auto w-[220px] sm:w-[300px] lg:w-[380px] xl:w-[460px]"
+            width={900}
+            height={150}
+            className="block h-auto w-[230px] sm:w-[310px] lg:w-[390px] xl:w-[440px]"
           />
         </a>
 
