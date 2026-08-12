@@ -21,7 +21,7 @@ export default function Header() {
       <div className="mx-auto flex min-h-[82px] w-full max-w-[1460px] items-center justify-between gap-3 px-4 py-3 sm:min-h-[90px] sm:gap-5 sm:px-7 lg:min-h-[96px] lg:gap-6 lg:px-9">
         <a href={isKorean ? "/ko" : "/"} aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="min-w-0 shrink">
           <img
-            src="/dsec-logo-option4.svg"
+            src="/dsec-logo-option4.svg?v=4"
             alt="DAESOUNG ELECTRIC COMPONENTS — DSEC"
             width={900}
             height={150}
