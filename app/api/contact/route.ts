@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 const TO_EMAIL = "daesoungcs@daesoung.com";
+const DEFAULT_FROM_EMAIL = "DSEC Website <noreply@daesoung.com>";
 
 export async function POST(request: Request) {
   try {
@@ -22,9 +23,9 @@ export async function POST(request: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const fromEmail = process.env.CONTACT_FROM_EMAIL;
+    const fromEmail = process.env.CONTACT_FROM_EMAIL || DEFAULT_FROM_EMAIL;
 
-    if (!apiKey || !fromEmail) {
+    if (!apiKey) {
       return NextResponse.json({ error: "The website email service is not configured yet." }, { status: 503 });
     }
 
