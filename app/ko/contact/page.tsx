@@ -1,5 +1,61 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 export default function KoreanContact() {
-  return <main className="min-h-screen bg-white text-slate-800"><section className="bg-green-800 px-6 py-32 text-white"><div className="mx-auto max-w-6xl"><p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">문의</p><h1 className="text-5xl font-bold tracking-tight md:text-6xl">문의하기</h1><p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">와이어 하네스, 전기 부품 및 맞춤형 제조 솔루션에 대해 문의해 주세요.</p></div></section><section className="px-6 py-24"><div className="mx-auto max-w-6xl"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">문의하기</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">함께 일하겠습니다</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">제품 문의, 견적, 제조 파트너십 및 기타 비즈니스 상담을 환영합니다.</p><div className="mt-14 grid gap-6 md:grid-cols-3"><Card title="위치" heading="생산시설" text={<>DAESOUNG ELECTRIC COMPONENTS<br />Indonesia</>} /><Card title="사업분야" heading="비즈니스 문의" text={<>와이어 하네스<br />전기 부품<br />맞춤형 솔루션</>} /><Card title="문의" heading="정보 요청" text={<>요구사항을 보내주시면<br />담당팀에서 검토하겠습니다.</>} /></div></div></section><section className="bg-slate-50 px-6 py-24"><div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">문의</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">메시지 보내기</h2><p className="mt-5 text-slate-600">아래에 연락처와 문의 내용을 남겨주세요.</p></div><form className="mt-14 space-y-6"><div className="grid gap-6 md:grid-cols-2"><Field label="이름" name="name" placeholder="이름을 입력하세요" /><Field label="회사명" name="company" placeholder="회사명을 입력하세요" /></div><Field label="이메일" name="email" type="email" placeholder="your@email.com" /><Field label="전화번호" name="phone" type="tel" placeholder="전화번호" /><div><label className="mb-2 block text-sm font-semibold text-slate-700">문의 분야</label><select name="inquiry" defaultValue="" className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"><option value="" disabled>선택해 주세요</option><option value="wire-harness">와이어 하네스</option><option value="electrical-components">전기 부품</option><option value="custom-solution">맞춤형 솔루션</option><option value="other">기타</option></select></div><div><label className="mb-2 block text-sm font-semibold text-slate-700">문의 내용</label><textarea name="message" rows={7} placeholder="요구사항을 자세히 알려주세요." className="w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700" /></div><div className="pt-4 text-center"><button type="submit" className="rounded-full bg-green-700 px-10 py-4 font-semibold text-white hover:bg-green-800">문의 보내기</button></div></form></div></section><section className="bg-green-800 px-6 py-20 text-white"><div className="mx-auto max-w-6xl text-center"><h2 className="text-3xl font-bold md:text-4xl">신뢰할 수 있는 제조 파트너</h2><p className="mx-auto mt-5 max-w-2xl leading-7 text-green-50">귀사의 요구사항을 듣고 장기적인 비즈니스 파트너십을 만들어가겠습니다.</p></div></section></main>;
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setError("");
+    setSent(false);
+    setSending(true);
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") || "").trim(),
+      company: String(data.get("company") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      inquiry: String(data.get("inquiry") || "").trim(),
+      message: String(data.get("message") || "").trim(),
+    };
+
+    if (!payload.name || !payload.email || !payload.inquiry || !payload.message) {
+      setError("필수 항목을 모두 입력해 주세요.");
+      setSending(false);
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "문의 내용을 보내지 못했습니다.");
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "문의 내용을 보내지 못했습니다. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      setSending(false);
+    }
+  }
+
+  return (
+    <main className="min-h-screen bg-white text-slate-800">
+      <section className="bg-green-800 px-6 py-32 text-white"><div className="mx-auto max-w-6xl"><p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">문의</p><h1 className="text-5xl font-bold tracking-tight md:text-6xl">문의하기</h1><p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">와이어 하네스, 전기 부품 및 맞춤형 제조 솔루션에 대해 문의해 주세요.</p></div></section>
+      <section className="px-6 py-24"><div className="mx-auto max-w-6xl"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">문의하기</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">함께 일하겠습니다</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">제품 문의, 견적, 제조 파트너십 및 기타 비즈니스 상담을 환영합니다.</p><div className="mt-14 grid gap-6 md:grid-cols-3"><Card title="위치" heading="생산시설" text={<>DAESOUNG ELECTRIC COMPONENTS<br />Indonesia</>} /><Card title="사업분야" heading="비즈니스 문의" text={<>와이어 하네스<br />전기 부품<br />맞춤형 솔루션</>} /><Card title="문의" heading="정보 요청" text={<>요구사항을 보내주시면<br />담당팀에서 검토하겠습니다.</>} /></div></div></section>
+      <section className="bg-slate-50 px-6 py-24"><div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">문의</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">메시지 보내기</h2><p className="mt-5 text-slate-600">아래에 연락처와 문의 내용을 남겨주세요.</p></div><form onSubmit={handleSubmit} className="mt-14 space-y-6" noValidate><div className="grid gap-6 md:grid-cols-2"><Field label="이름" name="name" placeholder="이름을 입력하세요" required /><Field label="회사명" name="company" placeholder="회사명을 입력하세요" /></div><Field label="이메일" name="email" type="email" placeholder="your@email.com" required /><Field label="전화번호" name="phone" type="tel" placeholder="전화번호" /><div><label className="mb-2 block text-sm font-semibold text-slate-700">문의 분야 <span className="text-green-700">*</span></label><select required name="inquiry" defaultValue="" className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"><option value="" disabled>선택해 주세요</option><option value="와이어 하네스">와이어 하네스</option><option value="전기 부품">전기 부품</option><option value="맞춤형 솔루션">맞춤형 솔루션</option><option value="기타">기타</option></select></div><div><label className="mb-2 block text-sm font-semibold text-slate-700">문의 내용 <span className="text-green-700">*</span></label><textarea required name="message" rows={7} placeholder="요구사항을 자세히 알려주세요." className="w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700" /></div>{error && <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-700">{error}</div>}{sent && <div role="status" className="rounded-xl border border-green-200 bg-green-50 px-5 py-4 text-sm text-green-800">문의가 정상적으로 접수되었습니다. 담당팀에서 확인 후 연락드리겠습니다.</div>}<div className="pt-4 text-center"><button disabled={sending} type="submit" className="rounded-full bg-green-700 px-10 py-4 font-semibold text-white transition hover:bg-green-800 disabled:cursor-not-allowed disabled:opacity-60">{sending ? "전송 중..." : "문의 보내기"}</button></div></form></div></section>
+      <section className="bg-green-800 px-6 py-20 text-white"><div className="mx-auto max-w-6xl text-center"><h2 className="text-3xl font-bold md:text-4xl">신뢰할 수 있는 제조 파트너</h2><p className="mx-auto mt-5 max-w-2xl leading-7 text-green-50">귀사의 요구사항을 듣고 장기적인 비즈니스 파트너십을 만들어가겠습니다.</p></div></section>
+    </main>
+  );
 }
-function Card({ title, heading, text }: { title: string; heading: string; text: React.ReactNode }) { return <div className="rounded-2xl border border-slate-200 p-8 hover:shadow-md"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">{title}</p><h3 className="mt-5 text-2xl font-bold text-slate-900">{heading}</h3><p className="mt-4 leading-7 text-slate-600">{text}</p></div>; }
-function Field({ label, name, placeholder, type = "text" }: { label: string; name: string; placeholder: string; type?: string }) { return <div><label className="mb-2 block text-sm font-semibold text-slate-700">{label}</label><input type={type} name={name} placeholder={placeholder} className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700" /></div>; }
+
+function Card({ title, heading, text }: { title: string; heading: string; text: React.ReactNode }) { return <div className="rounded-2xl border border-slate-200 p-8 transition hover:shadow-md"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">{title}</p><h3 className="mt-5 text-2xl font-bold text-slate-900">{heading}</h3><p className="mt-4 leading-7 text-slate-600">{text}</p></div>; }
+function Field({ label, name, placeholder, type = "text", required = false }: { label: string; name: string; placeholder: string; type?: string; required?: boolean }) { return <div><label className="mb-2 block text-sm font-semibold text-slate-700">{label} {required && <span className="text-green-700">*</span>}</label><input required={required} type={type} name={name} placeholder={placeholder} className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700" /></div>; }
