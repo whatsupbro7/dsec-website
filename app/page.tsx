@@ -128,7 +128,16 @@ export default function Home() {
               around customer requirements and product specifications.
             </p>
           </div>
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+
+          <div className="mt-14 overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm">
+            <img
+              src="/images/products/products.png"
+              alt="DAESOUNG ELECTRIC COMPONENTS product portfolio"
+              className="h-auto w-full rounded-2xl object-contain"
+            />
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
               <p className="text-sm font-semibold tracking-widest text-green-700">01</p>
               <h3 className="mt-4 text-2xl font-bold text-slate-900">Wire Harness</h3>
