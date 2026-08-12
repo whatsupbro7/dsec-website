@@ -20,16 +20,13 @@ export default function Header() {
     <header className="w-full border-b border-slate-200 bg-white">
       <div className="mx-auto flex min-h-[96px] w-full max-w-[1460px] items-center justify-between gap-6 px-5 py-3 sm:px-8 lg:px-9">
         <a href={isKorean ? "/ko" : "/"} aria-label="DAESOUNG ELECTRIC COMPONENTS home" className="shrink-0">
-          <svg width="520" height="110" viewBox="0 0 680 144" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="dsec-logo-title" className="h-auto w-[300px] sm:w-[380px] lg:w-[430px] xl:w-[520px]">
-            <title id="dsec-logo-title">DAESOUNG ELECTRIC COMPONENTS — DSEC</title>
-            <rect x="7" y="7" width="666" height="130" rx="65" fill="#ffffff" stroke="#087f3d" strokeWidth="6" />
-            <ellipse cx="101" cy="72" rx="86" ry="45" fill="#087f3d" />
-            <text x="101" y="89" textAnchor="middle" fill="#ffffff" fontSize="53" fontWeight="800" letterSpacing="2" fontFamily="Arial, Helvetica, sans-serif">DSEC</text>
-            <text x="206" y="67" fill="#173f8f" fontSize="28" fontWeight="800" letterSpacing="1" fontFamily="Arial, Helvetica, sans-serif">DAESOUNG ELECTRIC</text>
-            <line x1="206" y1="84" x2="271" y2="84" stroke="#6f7f9b" strokeWidth="2" />
-            <text x="284" y="92" fill="#6f7f9b" fontSize="16" fontWeight="700" letterSpacing="4.5" fontFamily="Arial, Helvetica, sans-serif">COMPONENTS</text>
-            <line x1="466" y1="84" x2="531" y2="84" stroke="#6f7f9b" strokeWidth="2" />
-          </svg>
+          <img
+            src="/dsec-logo-balanced.svg"
+            alt="DAESOUNG ELECTRIC COMPONENTS — DSEC"
+            width={1030}
+            height={210}
+            className="block h-auto w-[300px] sm:w-[380px] lg:w-[430px] xl:w-[520px]"
+          />
         </a>
 
         <div className="flex items-center gap-4">
