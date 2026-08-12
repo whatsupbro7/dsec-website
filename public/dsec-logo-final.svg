@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" role="img" aria-labelledby="title desc">
+  <title id="title">DSEC DAESOUNG ELECTRIC COMPONENTS</title>
+  <desc id="desc">Option 4 DSEC horizontal corporate logo with green oval mark, vertical separator, blue DAESOUNG ELECTRIC wordmark, and COMPONENTS subtitle.</desc>
+  <ellipse cx="78" cy="75" rx="68" ry="43" fill="#087f3d"/>
+  <text x="78" y="91" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" letter-spacing="0.5">DSEC</text>
+  <line x1="155" y1="28" x2="155" y2="122" stroke="#6f7f9b" stroke-width="3"/>
+  <text x="190" y="65" fill="#173f8f" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="0.4">DAESOUNG ELECTRIC</text>
+  <line x1="190" y1="84" x2="260" y2="84" stroke="#6f7f9b" stroke-width="3"/>
+  <text x="280" y="101" fill="#6f7f9b" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4.5">COMPONENTS</text>
+  <line x1="610" y1="84" x2="690" y2="84" stroke="#6f7f9b" stroke-width="3"/>
+</svg>
