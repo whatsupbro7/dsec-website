@@ -5,7 +5,7 @@ export default function KoreanHome() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex min-h-[calc(100vh-96px)] items-center justify-center px-6 pb-16 text-center text-white"><div className="-mt-4">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-green-300 md:text-base">2000년 설립</p>
-          <h1 className="text-5xl font-bold tracking-tight md:text-[76px]">대성전자</h1>
+          <h1 className="text-5xl font-bold tracking-tight md:text-[76px]">대 성 전 자</h1>
           <h2 className="mt-5 text-2xl font-light tracking-[0.16em] md:text-[40px]">전기 부품 전문기업</h2>
           <div className="mx-auto mt-5 h-[2px] w-16 bg-green-400" />
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-100 md:text-[22px]">정밀 와이어 하네스 및 전기 부품 솔루션</p>
