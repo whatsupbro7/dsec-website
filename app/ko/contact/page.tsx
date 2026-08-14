@@ -34,7 +34,7 @@ export default function KoreanContact() {
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">주소</p><h3 className="mt-4 text-2xl font-bold text-slate-900">인도네시아 공장</h3><p className="mt-4 leading-7 text-slate-600">{ADDRESS}</p></div>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">전화</p><a href="tel:+622159401278" className="mt-4 block text-xl font-bold text-slate-900 hover:text-green-700">+62 21 59401278</a></div>
-              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-4 block whitespace-nowrap overflow-x-auto text-lg font-bold text-slate-900 hover:text-green-700">daesoungcs@daesoung.com</a></div>
+              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-4 block whitespace-nowrap text-base font-bold tracking-tight text-slate-900 hover:text-green-700 sm:text-lg">daesoungcs@daesoung.com</a></div>
             </div>
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">사업분야</p><p className="mt-4 leading-7 text-slate-600">와이어 하네스<br />전기 부품<br />맞춤형 솔루션</p></div>
           </div>
