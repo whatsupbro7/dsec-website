@@ -3,7 +3,7 @@
 import { FormEvent, useState } from "react";
 
 const ADDRESS = "Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-const MAP_QUERY = "PT. Daesoung Electric Components, Jl. Telaga Mas IV No.10, Kawasan Cikupa Mas, Talaga, Cikupa, Tangerang, Banten 15710, Indonesia";
+const MAP_QUERY = "PT.Daesoung Electric Components, QGM4+V3, Talaga, Cikupa, Tangerang Regency, Banten, Indonesia";
 const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
 const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
 
