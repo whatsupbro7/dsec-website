@@ -79,3 +79,26 @@ body {
     font-size: 0.95rem;
   }
 }
+
+/* ================================
+   Contact information cards
+   Keep phone and email on one line
+   without clipping on desktop.
+   ================================ */
+
+@media (min-width: 640px) {
+  a[href^="tel:"],
+  a[href^="mailto:"] {
+    gap: 1rem;
+  }
+
+  a[href^="tel:"] span:last-child {
+    font-size: 1.25rem !important;
+    letter-spacing: -0.02em;
+  }
+
+  a[href^="mailto:"] span:last-child {
+    font-size: 1.125rem !important;
+    letter-spacing: -0.025em;
+  }
+}
