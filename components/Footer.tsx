@@ -1,5 +1,6 @@
 export default function Footer() {
-  const mapUrl = "https://www.google.com/maps/search/?api=1&query=PT.Daesoung+Electric+Components%2C+Jl.+Telaga+Mas+Raya+No.10%2C+Talaga%2C+Cikupa%2C+Tangerang%2C+Banten+15710%2C+Indonesia";
+  const placeId = "ChIJr8Kfc8UAQi4RPBeOlv4Rq6g";
+  const mapUrl = `https://www.google.com/maps/search/?api=1&query=PT.Daesoung+Electric+Components&query_place_id=${placeId}`;
 
   return (
     <footer className="border-t border-slate-200 bg-slate-950 text-white">
