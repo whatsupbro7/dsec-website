@@ -3,7 +3,9 @@
 import { FormEvent, useState } from "react";
 
 const ADDRESS = "Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-const MAP_QUERY = "PT.Daesoung Electric Components, QGM4+V3, Talaga, Cikupa, Tangerang Regency, Banten, Indonesia";
+// Use the exact Google Maps business listing rather than the previous Plus Code,
+// which was causing the embedded map to resolve the pin to the wrong location.
+const MAP_QUERY = "PT.Daesoung Electric Components, Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
 const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
 const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
 
