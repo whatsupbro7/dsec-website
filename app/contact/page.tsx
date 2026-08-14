@@ -3,11 +3,12 @@
 import { FormEvent, useState } from "react";
 
 const ADDRESS = "Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-// Use the exact Google Maps business listing rather than the previous Plus Code,
-// which was causing the embedded map to resolve the pin to the wrong location.
-const MAP_QUERY = "PT.Daesoung Electric Components, Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
-const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
+// Pin the embedded map to the exact Google Maps business listing/place ID.
+// Using the address alone can make Google's geocoder choose a nearby point.
+const PLACE_ID = "ChIJr8Kfc8UAQi4RPBeOlv4Rq6g";
+const MAP_QUERY = "PT.Daesoung Electric Components";
+const MAP_EMBED = `https://www.google.com/maps?q=place_id:${PLACE_ID}&output=embed`;
+const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}&query_place_id=${PLACE_ID}`;
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
