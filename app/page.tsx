@@ -18,8 +18,8 @@ export default function Home() {
               Since 2000
             </p>
 
-            <h1 className="text-5xl font-bold tracking-tight md:text-[76px] md:leading-none">
-              DAESOUNG
+            <h1 className="text-5xl font-bold tracking-[0.18em] md:text-[76px] md:leading-none">
+              대 성 전 자
             </h1>
 
             <h2 className="mt-5 text-2xl font-light tracking-[0.16em] md:text-[40px] md:leading-tight">
