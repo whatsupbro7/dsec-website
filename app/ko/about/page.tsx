@@ -23,7 +23,7 @@ export default function KoreanAbout() {
               <p>또한 고객 및 파트너사와의 신뢰와 장기적인 협력 관계를 중요하게 생각합니다. 임직원과 공정, 제조 역량의 지속적인 개선을 통해 함께 성장하고 더 나은 가치를 제공하는 기업이 되겠습니다.</p>
             </div>
           </div>
-          <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-gray-200"><img src="/images/factory.jpg" alt="대성전자 공장" className="aspect-[4/3] w-full object-cover" /></div>
+          <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-gray-200"><img src="/images/factory/factory1.png" alt="대성전자 실제 제조현장" className="aspect-[16/7] w-full object-cover" /></div>
         </div>
       </section>
 
