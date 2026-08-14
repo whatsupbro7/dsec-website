@@ -7,9 +7,10 @@ const PHONE = "+62 21 59401278";
 const EMAIL = "daesoungcs@daesoung.com";
 // 정확한 Google Maps 회사 등록 위치를 사용합니다.
 const PLACE_ID = "ChIJr8Kfc8UAQi4RPBeOlv4Rq6g";
-const MAP_QUERY = "PT.Daesoung Electric Components";
-const MAP_EMBED = `https://www.google.com/maps?q=place_id:${PLACE_ID}&output=embed`;
-const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}&query_place_id=${PLACE_ID}`;
+const MAP_QUERY = `${"PT.Daesoung Electric Components"}, ${ADDRESS}`;
+// 기존 place_id 검색형 URL은 일반 세계지도로 열릴 수 있어 정확한 회사명+주소를 직접 지정합니다.
+const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
+const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("PT.Daesoung Electric Components")}&query_place_id=${PLACE_ID}`;
 
 function PhoneIcon() {
   return <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.6 4.9 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.4 2.7.7 3.9.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.2 21 3 12.8 3 2.5c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.9.1.4 0 .9-.3 1.2l-2.1 2.2Z" /></svg>;
