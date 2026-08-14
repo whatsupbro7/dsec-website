@@ -19,11 +19,11 @@ export default function Home() {
             </p>
 
             <h1 className="text-5xl font-bold tracking-[0.18em] md:text-[76px] md:leading-none">
-              대 성 전 자
+              DAESOUNG ELECTRIC
             </h1>
 
             <h2 className="mt-5 text-2xl font-light tracking-[0.16em] md:text-[40px] md:leading-tight">
-              ELECTRIC COMPONENTS
+              COMPONENTS
             </h2>
 
             <div className="mx-auto mt-5 h-[2px] w-16 bg-green-400" />
