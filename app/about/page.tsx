@@ -36,7 +36,7 @@ export default function About() {
             </div>
 
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-gray-200">
-              <img src="/images/factory.jpg" alt="Daesoung Electric Components factory" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/factory/factory1.png" alt="Daesoung Electric Components manufacturing floor" className="aspect-[16/7] w-full object-cover" />
             </div>
           </div>
         </div>
