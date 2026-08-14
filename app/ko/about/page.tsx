@@ -39,7 +39,7 @@ export default function KoreanAbout() {
             <Info title="임직원" value="300+" text="품질을 위해 함께하는 사람들" />
             <Info title="인증" value="ISO 9001 / ISO 14001" text="품질 및 환경경영" />
             <Info title="제품" value="가전·자동차 와이어 하네스" text="와이어 하네스 및 전기 부품" />
-            <Info title="주요 고객" value="LG Electronics · POLYTRON · MIDEA" text="장기적인 비즈니스 파트너십" />
+            <Info title="주요 고객" value={["LG Electronics", "POLYTRON", "MIDEA"]} text="장기적인 파트너십" />
             <Info title="위치" value="Cikupa, Tangerang" text="Banten, Indonesia 15710" />
           </div>
         </div>
@@ -64,5 +64,5 @@ export default function KoreanAbout() {
     </main>
   );
 }
-function Info({ title, value, text }: { title: string; value: string; text: string }) { return <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100"><p className="text-sm font-semibold text-green-700">{title}</p><p className="mt-3 text-2xl font-bold text-gray-900">{value}</p><p className="mt-2 text-gray-500">{text}</p></div>; }
+function Info({ title, value, text }: { title: string; value: string | string[]; text: string }) { return <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100"><p className="text-sm font-semibold text-green-700">{title}</p><p className="mt-3 text-2xl font-bold leading-[1.45] text-gray-900">{Array.isArray(value) ? value.map((item) => <span key={item} className="block">{item}</span>) : value}</p><p className="mt-2 text-gray-500">{text}</p></div>; }
 function Value({ title, text }: { title: string; text: string }) { return <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm"><div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-xl text-green-700">✓</div><h3 className="mt-6 text-xl font-bold text-gray-900">{title}</h3><p className="mt-3 leading-7 text-gray-600">{text}</p></div>; }
