@@ -3,8 +3,9 @@
 import { FormEvent, useState } from "react";
 
 const ADDRESS = "Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-const MAP_EMBED = "https://www.google.com/maps?q=Jl.%20Telaga%20Mas%20Raya%20No.10%2C%20Talaga%2C%20Kec.%20Cikupa%2C%20Kabupaten%20Tangerang%2C%20Banten%2015710%2C%20Indonesia&output=embed";
-const MAP_LINK = "https://www.google.com/maps/search/?api=1&query=PT.Daesoung+Electric+Components%2C+Jl.+Telaga+Mas+Raya+No.10%2C+Talaga%2C+Cikupa%2C+Tangerang%2C+Banten+15710%2C+Indonesia";
+const MAP_QUERY = "PT. Daesoung Electric Components, Jl. Telaga Mas IV No.10, Kawasan Cikupa Mas, Talaga, Cikupa, Tangerang, Banten 15710, Indonesia";
+const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
+const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
 
 export default function KoreanContact() {
   const [sent, setSent] = useState(false);
@@ -33,7 +34,7 @@ export default function KoreanContact() {
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">주소</p><h3 className="mt-4 text-2xl font-bold text-slate-900">인도네시아 공장</h3><p className="mt-4 leading-7 text-slate-600">{ADDRESS}</p></div>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">전화</p><a href="tel:+622159401278" className="mt-4 block text-xl font-bold text-slate-900 hover:text-green-700">+62 21 59401278</a></div>
-              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-4 block break-all text-lg font-bold text-slate-900 hover:text-green-700">daesoungcs@daesoung.com</a></div>
+              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-4 block whitespace-nowrap overflow-x-auto text-lg font-bold text-slate-900 hover:text-green-700">daesoungcs@daesoung.com</a></div>
             </div>
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">사업분야</p><p className="mt-4 leading-7 text-slate-600">와이어 하네스<br />전기 부품<br />맞춤형 솔루션</p></div>
           </div>
