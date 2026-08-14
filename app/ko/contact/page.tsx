@@ -3,9 +3,21 @@
 import { FormEvent, useState } from "react";
 
 const ADDRESS = "Jl. Telaga Mas Raya No.10, Talaga, Kec. Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia";
-const MAP_QUERY = "PT.Daesoung Electric Components, QGM4+V3, Talaga, Cikupa, Tangerang Regency, Banten, Indonesia";
-const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
-const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
+const PHONE = "+62 21 59401278";
+const EMAIL = "daesoungcs@daesoung.com";
+// 정확한 Google Maps 회사 등록 위치를 사용합니다.
+const PLACE_ID = "ChIJr8Kfc8UAQi4RPBeOlv4Rq6g";
+const MAP_QUERY = "PT.Daesoung Electric Components";
+const MAP_EMBED = `https://www.google.com/maps?q=place_id:${PLACE_ID}&output=embed`;
+const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}&query_place_id=${PLACE_ID}`;
+
+function PhoneIcon() {
+  return <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.6 4.9 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.4 2.7.7 3.9.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.2 21 3 12.8 3 2.5c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.9.1.4 0 .9-.3 1.2l-2.1 2.2Z" /></svg>;
+}
+
+function EmailIcon() {
+  return <svg viewBox="0 0 24 24" className="h-6 w-6 fill-none stroke-current" strokeWidth="2" aria-hidden="true"><path d="M3 5h18v14H3z" /><path d="m3 6 9 7 9-7" /></svg>;
+}
 
 export default function KoreanContact() {
   const [sent, setSent] = useState(false);
@@ -28,13 +40,13 @@ export default function KoreanContact() {
   return (
     <main className="min-h-screen bg-white text-slate-800">
       <section className="bg-green-800 px-6 py-32 text-white"><div className="mx-auto max-w-6xl"><p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">문의</p><h1 className="text-5xl font-bold tracking-tight md:text-6xl">문의하기</h1><p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">와이어 하네스, 전기 부품 및 맞춤형 제조 솔루션에 대해 문의해 주세요.</p></div></section>
-      <section className="px-6 py-24"><div className="mx-auto max-w-6xl"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">CONTACT</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">DAESOUNG ELECTRIC COMPONENTS</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">제품 문의, 견적, 제조 파트너십 및 기타 비즈니스 상담을 환영합니다.</p>
-        <div className="mt-14 grid gap-8 lg:grid-cols-2">
+      <section className="px-6 py-24"><div className="mx-auto max-w-[1400px]"><p className="text-sm font-semibold tracking-[0.25em] text-green-700">CONTACT</p><h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">DAESOUNG ELECTRIC COMPONENTS</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">제품 문의, 견적, 제조 파트너십 및 기타 비즈니스 상담을 환영합니다.</p>
+        <div className="mt-14 grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">
           <div className="space-y-6">
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">주소</p><h3 className="mt-4 text-2xl font-bold text-slate-900">인도네시아 공장</h3><p className="mt-4 leading-7 text-slate-600">{ADDRESS}</p></div>
-            <div className="grid gap-6 sm:grid-cols-[0.9fr_1.1fr]">
-              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">전화</p><a href="tel:+622159401278" className="mt-5 flex min-w-0 items-center gap-3 whitespace-nowrap text-lg font-bold tracking-tight text-slate-900 hover:text-green-700 lg:text-xl"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-600 text-white" aria-hidden="true"><svg viewBox="0 0 24 24" className="h-6 w-6 fill-current"><path d="M6.6 10.8c1.5 3 3.6 4.9 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.4 2.7.7 3.9.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.2 21 3 12.8 3 2.5c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.9.1.4 0 .9-.3 1.2l-2.1 2.2Z" /></svg></span><span>+62 21 59401278</span></a></div>
-              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-5 flex min-w-0 items-center gap-3 whitespace-nowrap text-lg font-bold tracking-[-0.02em] text-slate-900 hover:text-green-700 lg:text-xl"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-600 text-white" aria-hidden="true"><svg viewBox="0 0 24 24" className="h-6 w-6 fill-none stroke-current" strokeWidth="2"><path d="M3 5h18v14H3z" /><path d="m3 6 9 7 9-7" /></svg></span><span className="min-w-0">daesoungcs@daesoung.com</span></a></div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">전화</p><a href="tel:+622159401278" className="mt-5 flex items-center gap-3 whitespace-nowrap text-[17px] font-bold tracking-tight text-slate-900 hover:text-green-700 sm:text-[18px]"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-600 text-white"><PhoneIcon /></span><span>{PHONE}</span></a></div>
+              <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">이메일</p><a href="mailto:daesoungcs@daesoung.com" className="mt-5 flex items-center gap-3 whitespace-nowrap text-[16px] font-bold tracking-[-0.02em] text-slate-900 hover:text-green-700 sm:text-[17px] lg:text-[18px]"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-600 text-white"><EmailIcon /></span><span>{EMAIL}</span></a></div>
             </div>
             <div className="rounded-2xl border border-slate-200 p-8"><p className="text-sm font-semibold tracking-[0.2em] text-green-700">사업분야</p><p className="mt-4 leading-7 text-slate-600">와이어 하네스<br />전기 부품<br />맞춤형 솔루션</p></div>
           </div>
