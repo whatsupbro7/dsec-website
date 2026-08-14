@@ -85,15 +85,10 @@ export default function Home() {
                 Building Trust Through Quality
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                DAESOUNG ELECTRIC COMPONENTS is a manufacturing
-                company specializing in wire harness and electrical
-                component solutions.
+                DAESOUNG ELECTRIC COMPONENTS is a manufacturing company specializing in wire harnesses and electrical component solutions.
               </p>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                Since our establishment in October 2000, we have
-                continuously developed our manufacturing capabilities
-                and built long-term relationships with customers
-                and partners.
+                Established in October 2000, we have continuously strengthened our manufacturing capabilities while building long-term partnerships with customers and business partners.
               </p>
               <a
                 href="/about"
