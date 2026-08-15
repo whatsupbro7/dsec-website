@@ -41,7 +41,7 @@ export default function KoreanHome() {
       <section className="border-y border-slate-200 bg-slate-50 px-6 py-10">
         <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-5">
           <a href="/ko/products" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="h-36 overflow-hidden bg-white"><img src="/images/products/wire-harness-products-final.svg" alt="와이어 하네스 제품" className="h-full w-full object-contain transition duration-300 group-hover:scale-105" /></div>
+            <div className="h-36 overflow-hidden bg-white"><img src="/images/products/이미지 2026. 8. 15. 오전 11.11.png" alt="와이어 하네스 제품" className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105" /></div>
             <div className="p-5"><h2 className="font-bold text-slate-950">Wire Harness</h2><p className="mt-1 text-sm text-slate-500">와이어 하네스</p></div>
           </a>
           <a href="/ko/products" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
