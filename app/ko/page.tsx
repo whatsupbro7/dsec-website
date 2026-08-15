@@ -45,7 +45,7 @@ export default function KoreanHome() {
             <div className="p-5"><h2 className="font-bold text-slate-950">Wire Harness</h2><p className="mt-1 text-sm text-slate-500">와이어 하네스</p></div>
           </a>
           <a href="/ko/products" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="h-36 overflow-hidden bg-white"><img src="/images/products/products.png" alt="전자 부품" className="h-full w-full object-cover object-bottom transition duration-300 group-hover:scale-105" /></div>
+            <div className="h-36 overflow-hidden bg-white"><img src="/images/products/이미지 2026. 8. 15. 오전 11.27.png" alt="전자 부품" className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105" /></div>
             <div className="p-5"><h2 className="font-bold text-slate-950">Electronic Components</h2><p className="mt-1 text-sm text-slate-500">전자 부품</p></div>
           </a>
           <a href="/ko/about" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
