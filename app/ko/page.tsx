@@ -53,7 +53,7 @@ export default function KoreanHome() {
             <div className="p-5"><h2 className="font-bold text-slate-950">Manufacturing Process</h2><p className="mt-1 text-sm text-slate-500">생산공정</p></div>
           </a>
           <a href="/ko/quality" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="flex h-36 items-center justify-center bg-green-50"><div className="text-center"><div className="text-5xl text-green-700">✓</div><div className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-green-800">Quality Control</div></div></div>
+            <div className="h-36 overflow-hidden bg-white"><img src="/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png" alt="품질 검사 라인" className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105" /></div>
             <div className="p-5"><h2 className="font-bold text-slate-950">Quality Management</h2><p className="mt-1 text-sm text-slate-500">품질관리</p></div>
           </a>
           <a href="/ko/contact" className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
