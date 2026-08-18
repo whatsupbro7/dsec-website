@@ -1,6 +1,6 @@
 const qualityImages = {
-  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
-  line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
   equipment: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.55.png",
   detail: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.00.png",
 };
@@ -12,9 +12,7 @@ export default function KoreanQuality() {
         <div className="mx-auto max-w-6xl">
           <p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">품질</p>
           <h1 className="text-5xl font-bold tracking-tight md:text-6xl">품질과 신뢰성</h1>
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">
-            대성전자는 엄격한 품질관리와 지속적인 개선을 통해 신뢰할 수 있는 제품을 제공하기 위해 노력합니다.
-          </p>
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">대성전자는 엄격한 품질관리와 지속적인 개선을 통해 신뢰할 수 있는 제품을 제공하기 위해 노력합니다.</p>
         </div>
       </section>
 
@@ -22,9 +20,7 @@ export default function KoreanQuality() {
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold tracking-[0.25em] text-green-700">품질관리</p>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold text-slate-900 md:text-5xl">품질은 최우선입니다</h2>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            입고 자재부터 최종검사와 출하까지 전체 제조과정에서 일관된 품질을 유지합니다.
-          </p>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">입고 자재부터 최종검사와 출하까지 전체 제조과정에서 일관된 품질을 유지합니다.</p>
 
           <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-xl">
             <img src={qualityImages.main} alt="대성전자 품질검사 라인" className="h-[300px] w-full object-cover md:h-[480px]" />
@@ -33,7 +29,7 @@ export default function KoreanQuality() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             <QualityPhoto src={qualityImages.line} title="검사 라인" text="체계적으로 구성된 검사 설비를 통해 안정적이고 반복 가능한 품질검사를 수행합니다." />
             <QualityPhoto src={qualityImages.equipment} title="품질 검사장비" text="전용 검사장비를 활용해 자재와 부품의 품질 상태를 확인하고 관리합니다." />
-            <QualityPhoto src={qualityImages.detail} title="정밀 검사" text="확대 검사와 세부 확인을 통해 커넥터 및 단자 상태를 세밀하게 점검합니다." />
+            <QualityPhoto src={qualityImages.detail} title="ISO 인증 및 품질관리 시스템" text="ISO 인증을 기반으로 체계적인 품질관리 시스템을 운영하고 지속적으로 개선합니다." />
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -50,12 +46,8 @@ export default function KoreanQuality() {
             <div>
               <p className="text-sm font-semibold tracking-[0.25em] text-green-700">품질경영</p>
               <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">모든 공정에서<br />일관된 품질</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                문제가 발생한 후 대응하기보다 사전에 예방하고, 생산 전 과정에서 일관된 제조 기준을 유지하는 것을 목표로 합니다.
-              </p>
-              <p className="mt-5 leading-7 text-slate-600">
-                자재검사와 생산공정 관리부터 최종검사까지 각 단계에서 품질과 고객 요구사항을 세심하게 관리합니다.
-              </p>
+              <p className="mt-6 text-lg leading-8 text-slate-600">문제가 발생한 후 대응하기보다 사전에 예방하고, 생산 전 과정에서 일관된 제조 기준을 유지하는 것을 목표로 합니다.</p>
+              <p className="mt-5 leading-7 text-slate-600">자재검사와 생산공정 관리부터 최종검사까지 각 단계에서 품질과 고객 요구사항을 세심하게 관리합니다.</p>
             </div>
             <div className="space-y-4">
               <QualityInfo number="01" title="자재 품질" text="생산 전 입고 자재와 부품을 철저하게 관리합니다." />
@@ -71,9 +63,7 @@ export default function KoreanQuality() {
           <div className="rounded-3xl bg-green-800 px-8 py-16 text-white md:px-16">
             <p className="text-sm font-semibold tracking-[0.25em] text-green-300">지속적인 개선</p>
             <h2 className="mt-4 max-w-3xl text-4xl font-bold md:text-5xl">더 나은 내일을 위한 오늘의 개선</h2>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-green-50">
-              제조공정을 지속적으로 검토하고 품질, 효율성 및 고객만족도를 높이기 위해 노력합니다.
-            </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-green-50">제조공정을 지속적으로 검토하고 품질, 효율성 및 고객만족도를 높이기 위해 노력합니다.</p>
           </div>
         </div>
       </section>
@@ -83,12 +73,8 @@ export default function KoreanQuality() {
           <div className="max-w-3xl">
             <p className="text-sm font-semibold tracking-[0.25em] text-green-700">품질에 대한 약속</p>
             <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">장기적인 신뢰 구축</h2>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              우리의 목표는 단순히 제품을 생산하는 데 그치지 않습니다. 모든 고객에게 신뢰할 수 있는 장기적인 제조 파트너가 되는 것을 목표로 합니다.
-            </p>
-            <p className="mt-5 leading-7 text-slate-600">
-              일관된 품질, 안정적인 생산 및 지속적인 개선을 통해 고객과 오래 지속되는 신뢰 관계를 구축해 나가겠습니다.
-            </p>
+            <p className="mt-6 text-lg leading-8 text-slate-600">우리의 목표는 단순히 제품을 생산하는 데 그치지 않습니다. 모든 고객에게 신뢰할 수 있는 장기적인 제조 파트너가 되는 것을 목표로 합니다.</p>
+            <p className="mt-5 leading-7 text-slate-600">일관된 품질, 안정적인 생산 및 지속적인 개선을 통해 고객과 오래 지속되는 신뢰 관계를 구축해 나가겠습니다.</p>
           </div>
         </div>
       </section>
