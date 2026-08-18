@@ -1,7 +1,7 @@
 const qualityImages = {
-  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.55.png",
   line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
-  equipment: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.55.png",
+  equipment: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
   detail: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.00.png",
 };
 
@@ -23,7 +23,7 @@ export default function KoreanQuality() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">입고 자재부터 최종검사와 출하까지 전체 제조과정에서 일관된 품질을 유지합니다.</p>
 
           <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-xl">
-            <img src={qualityImages.main} alt="대성전자 품질검사 라인" className="h-[300px] w-full object-cover md:h-[480px]" />
+            <img src={qualityImages.main} alt="대성전자 정밀 품질검사" className="h-[300px] w-full object-cover md:h-[480px]" />
           </div>
 
           <div className="mt-6 grid gap-6 md:grid-cols-3">
