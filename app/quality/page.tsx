@@ -1,6 +1,6 @@
 const qualityImages = {
-  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
-  line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
   equipment: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.55.png",
   detail: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.00.png",
 };
@@ -33,7 +33,7 @@ export default function Quality() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             <QualityPhoto src={qualityImages.line} title="Inspection Line" text="Structured inspection stations support stable and repeatable quality checks." />
             <QualityPhoto src={qualityImages.equipment} title="Test Equipment" text="Dedicated quality equipment supports material and component verification." />
-            <QualityPhoto src={qualityImages.detail} title="Detailed Inspection" text="Close visual inspection helps identify connector and terminal quality issues." />
+            <QualityPhoto src={qualityImages.detail} title="ISO Certification & Quality System" text="ISO-certified management systems support consistent quality control and continual improvement." />
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
