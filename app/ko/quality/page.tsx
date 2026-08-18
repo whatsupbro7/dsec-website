@@ -1,8 +1,14 @@
+const qualityImages = {
+  main: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.03.png",
+  line: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.54.png",
+  equipment: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2011.55.png",
+  detail: "/images/quality/%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%202026.%208.%2018.%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.00.png",
+};
+
 export default function KoreanQuality() {
   return (
     <main className="min-h-screen bg-white text-slate-800">
-      {/* QUALITY HERO */}
-      <section className="bg-green-800 px-6 py-32 text-white">
+      <section className="bg-green-800 px-6 py-28 text-white">
         <div className="mx-auto max-w-6xl">
           <p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">품질</p>
           <h1 className="text-5xl font-bold tracking-tight md:text-6xl">품질과 신뢰성</h1>
@@ -12,14 +18,23 @@ export default function KoreanQuality() {
         </div>
       </section>
 
-      {/* QUALITY INTRO */}
-      <section className="px-6 py-24">
+      <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold tracking-[0.25em] text-green-700">품질관리</p>
           <h2 className="mt-4 max-w-3xl text-4xl font-bold text-slate-900 md:text-5xl">품질은 최우선입니다</h2>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             입고 자재부터 최종검사와 출하까지 전체 제조과정에서 일관된 품질을 유지합니다.
           </p>
+
+          <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-xl">
+            <img src={qualityImages.main} alt="대성전자 품질검사 라인" className="h-[300px] w-full object-cover md:h-[480px]" />
+          </div>
+
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <QualityPhoto src={qualityImages.line} title="검사 라인" text="체계적으로 구성된 검사 설비를 통해 안정적이고 반복 가능한 품질검사를 수행합니다." />
+            <QualityPhoto src={qualityImages.equipment} title="품질 검사장비" text="전용 검사장비를 활용해 자재와 부품의 품질 상태를 확인하고 관리합니다." />
+            <QualityPhoto src={qualityImages.detail} title="정밀 검사" text="확대 검사와 세부 확인을 통해 커넥터 및 단자 상태를 세밀하게 점검합니다." />
+          </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             <QualityCard number="01" title="입고검사" text="자재와 부품을 생산공정에 투입하기 전에 세심하게 검사합니다." />
@@ -29,17 +44,12 @@ export default function KoreanQuality() {
         </div>
       </section>
 
-      {/* QUALITY MANAGEMENT */}
       <section className="bg-slate-50 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-16 md:grid-cols-2 md:items-center">
             <div>
               <p className="text-sm font-semibold tracking-[0.25em] text-green-700">품질경영</p>
-              <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">
-                모든 공정에서
-                <br />
-                일관된 품질
-              </h2>
+              <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">모든 공정에서<br />일관된 품질</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
                 문제가 발생한 후 대응하기보다 사전에 예방하고, 생산 전 과정에서 일관된 제조 기준을 유지하는 것을 목표로 합니다.
               </p>
@@ -47,7 +57,6 @@ export default function KoreanQuality() {
                 자재검사와 생산공정 관리부터 최종검사까지 각 단계에서 품질과 고객 요구사항을 세심하게 관리합니다.
               </p>
             </div>
-
             <div className="space-y-4">
               <QualityInfo number="01" title="자재 품질" text="생산 전 입고 자재와 부품을 철저하게 관리합니다." />
               <QualityInfo number="02" title="생산 안정성" text="공정 모니터링을 통해 안정적이고 일관된 생산을 유지합니다." />
@@ -57,7 +66,6 @@ export default function KoreanQuality() {
         </div>
       </section>
 
-      {/* CONTINUOUS IMPROVEMENT */}
       <section className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-3xl bg-green-800 px-8 py-16 text-white md:px-16">
@@ -70,7 +78,6 @@ export default function KoreanQuality() {
         </div>
       </section>
 
-      {/* QUALITY COMMITMENT */}
       <section className="bg-slate-50 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
@@ -86,17 +93,26 @@ export default function KoreanQuality() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="bg-green-800 px-6 py-20 text-white">
         <div className="mx-auto max-w-6xl text-center">
           <p className="text-sm font-semibold tracking-[0.25em] text-green-300">DAESOUNG ELECTRIC COMPONENTS</p>
           <h2 className="mt-4 text-3xl font-bold md:text-4xl">믿고 맡길 수 있는 품질</h2>
-          <p className="mx-auto mt-5 max-w-2xl leading-7 text-green-50">
-            신뢰할 수 있는 제품과 안정적인 제조 솔루션을 제공하기 위해 최선을 다하겠습니다.
-          </p>
+          <p className="mx-auto mt-5 max-w-2xl leading-7 text-green-50">신뢰할 수 있는 제품과 안정적인 제조 솔루션을 제공하기 위해 최선을 다하겠습니다.</p>
         </div>
       </section>
     </main>
+  );
+}
+
+function QualityPhoto({ src, title, text }: { src: string; title: string; text: string }) {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <img src={src} alt={title} className="h-52 w-full object-cover" />
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-slate-900">{title}</h3>
+        <p className="mt-2 leading-6 text-slate-600">{text}</p>
+      </div>
+    </div>
   );
 }
 
@@ -115,13 +131,8 @@ function QualityInfo({ number, title, text }: { number: string; title: string; t
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-6">
       <div className="flex items-start gap-5">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100 text-sm font-bold text-green-700">
-          {number}
-        </span>
-        <div>
-          <h3 className="text-lg font-bold text-slate-900">{title}</h3>
-          <p className="mt-2 leading-6 text-slate-600">{text}</p>
-        </div>
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100 text-sm font-bold text-green-700">{number}</span>
+        <div><h3 className="text-lg font-bold text-slate-900">{title}</h3><p className="mt-2 leading-6 text-slate-600">{text}</p></div>
       </div>
     </div>
   );
