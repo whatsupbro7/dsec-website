@@ -7,8 +7,8 @@ export default function Products() {
     },
     {
       number: "02",
-      title: "Electrical Components",
-      text: "Electrical component assemblies produced according to customer drawings and technical specifications.",
+      title: "Electronic Components",
+      text: "Electronic component assemblies produced according to customer drawings and technical specifications.",
     },
     {
       number: "03",
@@ -24,7 +24,7 @@ export default function Products() {
           <p className="mb-5 text-sm font-semibold tracking-[0.3em] text-green-300">OUR PRODUCTS</p>
           <h1 className="text-5xl font-bold tracking-tight md:text-6xl">Wire Harness Solutions</h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-green-50">
-            DAESOUNG ELECTRIC COMPONENTS provides reliable wire harness and electrical component solutions designed around customer requirements.
+            DAESOUNG ELECTRIC COMPONENTS provides reliable wire harness and electronic component solutions designed around customer requirements.
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function Products() {
               Built to Customer Requirements
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              The product portfolio below presents actual DAESOUNG ELECTRIC COMPONENTS wire harnesses and electrical component assemblies. Products can be manufactured according to customer drawings, specifications and application requirements.
+              The product portfolio below presents actual DAESOUNG ELECTRIC COMPONENTS wire harnesses and electronic component assemblies. Products can be manufactured according to customer drawings, specifications and application requirements.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export default function Products() {
             <div className="overflow-hidden rounded-[1.5rem] bg-white">
               <img
                 src="/images/products/products.png"
-                alt="Actual DAESOUNG ELECTRIC COMPONENTS wire harness and electrical component products"
+                alt="Actual DAESOUNG ELECTRIC COMPONENTS wire harness and electronic component products"
                 className="h-auto w-full object-contain"
               />
             </div>
@@ -93,7 +93,7 @@ export default function Products() {
             <div>
               <p className="text-sm font-semibold tracking-[0.25em] text-green-300">CUSTOM INQUIRY</p>
               <h2 className="mt-4 text-3xl font-bold md:text-4xl">Looking for a Custom Solution?</h2>
-              <p className="mt-4 max-w-2xl leading-7 text-green-50">Contact us to discuss your wire harness and electrical component requirements.</p>
+              <p className="mt-4 max-w-2xl leading-7 text-green-50">Contact us to discuss your wire harness and electronic component requirements.</p>
             </div>
             <a href="/contact" className="inline-flex w-fit rounded-full bg-white px-8 py-4 font-semibold text-green-800 transition hover:bg-green-50">CONTACT US</a>
           </div>
