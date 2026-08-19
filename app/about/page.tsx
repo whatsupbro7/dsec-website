@@ -3,14 +3,14 @@ export default function About() {
     <main className="bg-white text-gray-800">
       {/* ABOUT HERO */}
       <section className="relative overflow-hidden bg-gray-950 text-white">
-        <img src="/images/factory.jpg" alt="Daesoung Electric Components manufacturing facility" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="/images/factory.jpg" alt="DAESOUNG ELECTRIC COMPONENTS manufacturing facility" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gray-950/70" />
         <div className="relative mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-green-300">Since 2000</p>
-          <h1 className="text-5xl font-bold tracking-tight md:text-7xl">About Daesoung</h1>
+          <h1 className="text-5xl font-bold tracking-tight md:text-7xl">About DAESOUNG</h1>
           <p className="mt-5 max-w-3xl text-xl font-light tracking-[0.18em] text-white/90 md:text-3xl">ELECTRIC COMPONENTS</p>
           <p className="mt-8 max-w-2xl text-base leading-8 text-gray-200 md:text-lg">
-            DAESOUNG ELECTRIC COMPONENTS is a manufacturing company specializing in wire harnesses and electrical component solutions, with a commitment to quality, reliability and continuous improvement.
+            DAESOUNG ELECTRIC COMPONENTS is a manufacturing company specializing in wire harnesses and electronic component solutions, with a commitment to quality, reliability and continuous improvement.
           </p>
         </div>
       </section>
@@ -24,7 +24,7 @@ export default function About() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">Building Trust Through Quality</h2>
               <div className="mt-7 space-y-5 text-base leading-8 text-gray-600 md:text-lg">
                 <p>
-                  Established in October 2000, DAESOUNG ELECTRIC COMPONENTS has specialized in the manufacturing of wire harnesses and electrical components.
+                  Established in October 2000, DAESOUNG ELECTRIC COMPONENTS has specialized in the manufacturing of wire harnesses and electronic components.
                 </p>
                 <p>
                   Since our establishment, we have continuously strengthened our manufacturing capabilities and quality management systems, providing reliable products and responsive service to our customers.
@@ -36,7 +36,7 @@ export default function About() {
             </div>
 
             <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-gray-200">
-              <img src="/images/factory/factory1.png" alt="Daesoung Electric Components manufacturing floor" className="aspect-[16/7] w-full object-cover" />
+              <img src="/images/factory/factory1.png" alt="DAESOUNG ELECTRIC COMPONENTS manufacturing floor" className="aspect-[16/7] w-full object-cover" />
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function About() {
               <p className="text-sm font-semibold text-green-700">PRODUCTS</p>
               <p className="mt-3 text-xl font-bold text-gray-900">Home Appliance Harness</p>
               <p className="mt-1 text-xl font-bold text-gray-900">Automotive Harness</p>
-              <p className="mt-2 text-gray-500">Wire harness and electrical components</p>
+              <p className="mt-2 text-gray-500">Wire harness and electronic components</p>
             </div>
             <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100">
               <p className="text-sm font-semibold text-green-700">MAIN CUSTOMERS</p>
