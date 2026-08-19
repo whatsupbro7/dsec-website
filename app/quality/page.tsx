@@ -84,7 +84,7 @@ export default function Quality() {
             <p className="text-sm font-semibold tracking-[0.25em] text-green-700">OUR COMMITMENT</p>
             <h2 className="mt-4 text-4xl font-bold text-slate-900 md:text-5xl">Building Long-Term Trust</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Our goal is not simply to manufacture products. We aim to become a reliable long-term manufacturing partner for every customer.
+              Our goal goes beyond manufacturing products. We aim to become a reliable long-term manufacturing partner for every customer.
             </p>
             <p className="mt-5 leading-7 text-slate-600">
               Through consistent quality, reliable production and continuous improvement, DAESOUNG ELECTRIC COMPONENTS strives to build lasting relationships with our customers.
