@@ -21,9 +21,9 @@ export default function Quality() {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold tracking-[0.25em] text-green-700">OUR QUALITY</p>
-          <h2 className="mt-4 max-w-3xl text-4xl font-bold text-slate-900 md:text-5xl">Commitment to Quality</h2>
+          <h2 className="mt-4 max-w-3xl text-4xl font-bold text-slate-900 md:text-5xl">Quality Comes First</h2>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            We ensure uncompromising quality across every stage of manufacturing, from incoming materials to final inspection and delivery.
+            We ensure uncompromising quality at every stage — from raw materials to final inspection and on-time delivery — delivering the reliability our customers can trust.
           </p>
 
           <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-xl">
